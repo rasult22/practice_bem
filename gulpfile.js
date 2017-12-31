@@ -1,3 +1,4 @@
+'use strict';
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const autoprefixer = require('gulp-autoprefixer');
