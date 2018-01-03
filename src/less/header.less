@@ -10,7 +10,9 @@
         background-color: #111111;
         color: #636363;
         text-decoration: none;
+        font-size: 13px;
         font-family: @fontRoboto;
+     
         .container{
             .wrapper();// mixin
             
@@ -41,18 +43,89 @@
 
 
 .email{
+    position: relative;
     margin-right: auto;
     color: inherit;
     text-decoration: inherit;
+    &::before{
+        position: absolute;
+        top: -2px;
+        left: -28px;
+
+        width: 21px;
+        height: 20px;
+        content: "";
+        display: block;
+       
+        background-position: -239px -192px;
+        background-image: url(../images/spritesheet.png);
+        background-repeat: no-repeat;
+        
+    }
+    &:hover{
+        color:#e5493a;
+        &::before{
+            background-position: -140px -222px;   
+        }
+    }
 }
 
 .changeLanguage{
+    position: relative;
     margin-right: 75px;
+    
+
     color: inherit;
     text-decoration: inherit;
     border:none;
     background: inherit;
     font-family: inherit;
+    &::before{
+        position: absolute;
+        top: 0;
+        left: -20px;
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url(../images/spritesheet.png);
+        background-repeat: no-repeat;
+        background-position: -71px -87px;  
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        right: -7px;
+        top: 5px;
+        background-color:transparent;
+        border: solid  #363636;
+        border-width: 0 2px 2px 0;
+        width: 5px;
+        height: 5px;
+        transform: rotate(45deg);
+    }
+    &:hover{
+        color:#e5493a;
+        &:before{
+            background-position: -99px -87px; 
+        }
+        
+        &::after{
+           
+            position: absolute;
+            content: "";
+            display: block;
+            right: -7px;
+            top: 5px;
+            background-color:transparent;
+            border: solid #e5493a;
+            border-width: 0 2px 2px 0;
+            width: 5px;
+            height: 5px;
+            transform: rotate(45deg);
+        }
+    }
 
      //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
      .lg-block({
@@ -61,9 +134,30 @@
 }
 
 .phoneNumb{
+    position: relative;
     margin-right: 75px;
     color: inherit;
+    font-family: inherit;
     text-decoration: inherit;
+    &::before{
+        position: absolute;
+        top: -1px;
+        left: -20px;
+        content: "";
+        display: block;
+        width: 12px;
+        height: 19px;
+        background-image: url(../images/spritesheet.png);
+        background-repeat: no-repeat;
+        background-position: -239px -163px;
+        
+    }
+    &:hover{
+        color:#e5493a;
+        &::before{
+            background-position: -261px -163px;
+        }
+    }
 
      //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
      .lg-block({
@@ -75,15 +169,18 @@
 
 .socialNetworks{
     
-    display: flex;
+   
     padding: 0;
     margin-left: 75px;
-
+    
     font-size:0;
     list-style-type: none;
     color: inherit;
     text-decoration: inherit;
+    a{
 
+        display: inline-block;      
+    }
     //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
     .lg-block({
         margin-right: auto;
@@ -91,6 +188,7 @@
 }
 
 .signIn{
+    position: relative;
     margin-left: auto;
     color: inherit;
     text-decoration: inherit;
@@ -98,10 +196,25 @@
     span{
         color: #8dc63f;
     }
+
+    &::before{
+        position: absolute;
+        left: -28px;
+        top: -1px;
+        content: "";
+        width: 22px;
+        height: 18px;
+
+        background-image: url(../images/spritesheet.png);
+        background-repeat: no-repeat;
+        background-position: -185px -87px;
+    }
 }
 
 .wishlist{
+    position: relative;
     margin-left: 75px;
+    
     color: inherit;
     text-decoration: inherit;
     border:none;
@@ -109,6 +222,41 @@
     font-family: inherit;
     span{
         color: #959595;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 19px;
+        top:-1px;
+        left: -25px;
+
+        background-position: -5px -87px;
+        background-image: url(../images/spritesheet.png);
+        background-repeat: no-repeat;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        right: -7px;
+        top: 5px;
+        background-color:transparent;
+        border: solid  #363636;
+        border-width: 0 2px 2px 0;
+        width: 5px;
+        height: 5px;
+        transform: rotate(45deg);
+        
+    }
+    &:hover{
+        &::before{
+            background-position: -38px -87px;
+        }
+        &::after{
+            border-right: 2px solid  #e5493a;
+            border-bottom: 2px solid  #e5493a;
+        }
     }
 
 
