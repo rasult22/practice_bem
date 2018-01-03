@@ -26,12 +26,22 @@
                    flex-grow: 1;
                    flex-basis: 520px;
                    justify-content: space-around;
+                   //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
+                   .lg-block({
+                        justify-content: space-around;
+                   });
                }
                .right-side{
                    flex-grow: 1;
                    flex-basis: 520px;
                    display: flex;
                    justify-content: space-around;
+
+                   //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
+                   .lg-block({
+                    margin-top: 10px;
+                    justify-content: space-around;
+                   });
                }
             }
         }
@@ -68,6 +78,9 @@
             background-position: -140px -222px;   
         }
     }
+    .lg-block({
+        margin: 0;
+    });
 }
 
 .changeLanguage{
@@ -127,9 +140,9 @@
         }
     }
 
-     //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
-     .lg-block({
-        margin-left: auto;
+    .lg-block({
+        margin: 0;
+        order:1;
     });
 }
 
@@ -158,12 +171,12 @@
             background-position: -261px -163px;
         }
     }
-
-     //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
-     .lg-block({
-        margin-right: auto;
-        margin-left: auto;
+    .lg-block({
+        margin: 0;
+        order:-1;
     });
+
+    
 }
 
 
@@ -181,10 +194,11 @@
 
         display: inline-block;      
     }
-    //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
     .lg-block({
-        margin-right: auto;
+        margin: 0;
+        order:-1;
     });
+    
 }
 
 .signIn{
@@ -209,6 +223,11 @@
         background-repeat: no-repeat;
         background-position: -185px -87px;
     }
+     
+    .lg-block({
+        margin: 0;
+        order:1;
+    });
 }
 
 .wishlist{
@@ -259,10 +278,10 @@
         }
     }
 
-
-     //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
-     .lg-block({
-        margin-right: auto;
-        margin-left: auto;
+    .lg-block({
+        margin: 0;
     });
+
+     
+    
 }
