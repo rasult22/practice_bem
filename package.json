@@ -34,6 +34,7 @@
     "gulp-less": "^3.3.2",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.2",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "smart-grid": "^2.0.1"
   }
 }

@@ -1,0 +1,120 @@
+@import 'smart-grid.less';
+@import 'sprites.less';
+
+.header{
+    &__firstHeader{
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        background-color: #111111;
+        color: #636363;
+        text-decoration: none;
+        font-family: @fontRoboto;
+        .container{
+            .wrapper();// mixin
+            
+            .wrap{
+                display: flex;
+                flex-wrap: wrap;
+                
+               .left-side{
+                   
+                   display: flex;
+                   flex-grow: 1;
+                   flex-basis: 520px;
+                   justify-content: space-around;
+               }
+               .right-side{
+                   flex-grow: 1;
+                   flex-basis: 520px;
+                   display: flex;
+                   justify-content: space-around;
+               }
+            }
+        }
+    }
+
+
+}
+
+
+
+.email{
+    margin-right: auto;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.changeLanguage{
+    margin-right: 75px;
+    color: inherit;
+    text-decoration: inherit;
+    border:none;
+    background: inherit;
+    font-family: inherit;
+
+     //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
+     .lg-block({
+        margin-left: auto;
+    });
+}
+
+.phoneNumb{
+    margin-right: 75px;
+    color: inherit;
+    text-decoration: inherit;
+
+     //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
+     .lg-block({
+        margin-right: auto;
+        margin-left: auto;
+    });
+}
+
+
+.socialNetworks{
+    
+    display: flex;
+    padding: 0;
+    margin-left: 75px;
+
+    font-size:0;
+    list-style-type: none;
+    color: inherit;
+    text-decoration: inherit;
+
+    //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
+    .lg-block({
+        margin-right: auto;
+    });
+}
+
+.signIn{
+    margin-left: auto;
+    color: inherit;
+    text-decoration: inherit;
+
+    span{
+        color: #8dc63f;
+    }
+}
+
+.wishlist{
+    margin-left: 75px;
+    color: inherit;
+    text-decoration: inherit;
+    border:none;
+    background: inherit;
+    font-family: inherit;
+    span{
+        color: #959595;
+    }
+
+
+     //media queries lg- 1116px, md 996px, sm 720px, xs 576px, xxs 380px
+     .lg-block({
+        margin-right: auto;
+        margin-left: auto;
+    });
+}
