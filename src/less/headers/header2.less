@@ -1,16 +1,35 @@
-@import 'smart-grid.less';
-@import 'sprites.less';
+@import '../smart-grid.less';
+@import '../sprites.less';
 
-.header__secondHeader{
-    background-color: #2a2a2a;
-    .container{
-        .wrapper();
-        
-        .wrap{
-            display:flex;
-            padding-top: 27px;
-            padding-bottom: 27px;
+.header{
+    &__secondHeader{
+        background-color: #2a2a2a;
+        .container{
+            .wrapper();
+            
+            .wrap{
+                display:flex;
+                padding-top: 27px;
+                padding-bottom: 27px;
 
+            }
+        }
+    }
+    .lines-wrap{
+        position: relative;
+        width: 100%;
+        .line-left{
+            position: absolute;
+            width: 50%;
+            background-color: #eb342c;
+            height: 3px;
+        }
+        .line-right{
+            position: absolute;
+            width: 50%;
+            background-color: #484b4b;
+            height: 3px;
+            right: 0;
         }
     }
 }
@@ -177,3 +196,8 @@
         }
     }
 }
+
+
+
+/*Decoration lines*/
+
